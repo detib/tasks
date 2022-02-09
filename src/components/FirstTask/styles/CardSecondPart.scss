@@ -1,0 +1,74 @@
+.card-container {
+  width: 80%;
+  margin: 10% auto;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px 15px;
+  flex-wrap: wrap;
+  .single-card {
+    flex: 0 1 425px;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h6 {
+      font-size: 16px;
+      color: #3a3a57;
+    }
+    .button-image {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .image-container {
+          flex-shrink: 0;
+          width: 25px;
+          height: 25px;
+          .image {
+            border-radius: 50%;
+            width: 100%;
+          }
+        }
+        .name {
+            color: #171735;
+            font-weight: 600;
+        }
+      }
+      .button {
+        padding: 0.5em 12.5%;
+        border-radius: 7.5px;
+        color: #fff;
+        transition: 0.3s;
+      }
+    }
+    .card-text {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.7;
+      width: 85%;
+      color: #c5c5c5;
+    }
+    .download {
+      align-self: flex-start;
+      padding: 1em 3em;
+      color: #5a5add;
+      border: 1px solid #5a5add;
+      border-radius: 100vh;
+      transition: color 0.2s, background-position 0.3s;
+      background: linear-gradient(to right, #fff 50%, #5a5add 50%, #5a5add, #4b4bb3, #5a5add);
+      background-size: 200% 200%;
+      background-position: 0;
+      &:hover {
+        color: #fff;
+        background-position: 99.5%;
+      }
+    }
+  }
+}
