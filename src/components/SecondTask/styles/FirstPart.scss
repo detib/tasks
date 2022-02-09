@@ -1,0 +1,96 @@
+.react-tabs-component {
+  width: 85%;
+  margin: 5% auto;
+  padding: 3em;
+  background: radial-gradient(#f7f7f7, transparent 90%);
+  .react-tabs {
+    &__tab-list {
+      border: none;
+      margin: 0 0 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__tab {
+      padding: 0.75em 0;
+      flex: 1;
+      text-align: center;
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+    &__tab--selected {
+      border-bottom: 2px solid #3256d8;
+    }
+    &__tab-panel {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 50px;
+      .tab-panel-box {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5em 2em;
+        border-radius: 10px;
+        gap: 25px;
+        .domain-name {
+          font-size: 2em;
+          font-weight: 500;
+          color: #1e274b;
+        }
+        .price {
+          flex: 1;
+          display: inherit;
+          flex-direction: inherit;
+          align-items: inherit;
+          gap: 5px;
+
+          .exact-price {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #1e274b;
+          }
+          .before-price {
+            font-size: 0.9em;
+            color: #c9c9c9;
+          }
+        }
+        .box-link {
+          align-self: stretch;
+          text-align: center;
+          border: 2px solid #3256d8;
+          border-radius: 5px;
+          padding: 0.5em 0;
+          font-weight: 600;
+          color: #3256d8;
+          transition: 0.3s;
+        }
+        &:hover {
+          .price {
+            animation: shake1 0.75s;
+          }
+          .box-link {
+            color: #fff;
+            background-color: #3256d8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes shake1 {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}

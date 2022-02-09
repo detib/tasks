@@ -7,7 +7,7 @@ const SecondTask = () => {
   return (
     <div className='second-task'>
       <FirstPart />
-      <SecondPart />
+      {/* <SecondPart /> */}
     </div>
   );
 };
