@@ -1,0 +1,109 @@
+.about-us-container {
+    padding-bottom: 250px;
+  .about-us {
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid #d8d8d8;
+    .about-question {
+      padding: 1.5em 2em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      .icon-container {
+        --size: 100px;
+        width: var(--size);
+        height: var(--size);
+        border: 1px solid #2469ff;
+        border-radius: 50%;
+        text-align: center;
+        svg {
+          color: #2469ff;
+          width: 60%;
+          height: 60%;
+          margin-top: 15%;
+        }
+      }
+      .question-container {
+        flex: 1;
+        h6 {
+          color: #182e5c;
+          font-size: 2em;
+          font-weight: normal;
+        }
+        p {
+          margin-top: 10px;
+          color: #aaa;
+          font-size: 1.3em;
+        }
+      }
+      .arrow-down {
+        color: #182e5c;
+        font-size: 4em;
+        transition: 0.3s;
+      }
+    }
+    .question {
+      padding: 1.5em 2em;
+      border-bottom: 1px solid #d8d8d8;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        &_question {
+          font-size: 1.1em;
+          font-weight: 600;
+          color: #182e5c;
+        }
+        svg {
+          flex-shrink: 0;
+          font-size: 2em;
+          color: #182e5c;
+          transition: 0.3s;
+        }
+      }
+      .answer {
+          margin-top: 20px;
+        font-size: 1.1em;
+        color: #182e5c;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+    .icon-container {
+        --size: 40px !important;
+    }
+    .question-container {
+        font-size: 12px;
+    }
+    .arrow-down {
+        font-size: 2.5em !important;
+    }
+    .header {
+        font-size: 13px;
+    }
+    .answer {
+        font-size: 0.8em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-question {
+        flex-direction: column;
+        align-items: unset !important;
+        svg {
+            align-self: center;
+        }
+    }
+}
+
+.turnup {
+  transform: rotate(-90deg) !important;
+}
+
+.rotate {
+  transform: rotate(180deg) !important;
+}
