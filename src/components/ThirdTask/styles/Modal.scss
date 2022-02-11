@@ -43,6 +43,7 @@
             border-bottom: 1px solid #ccc;
             p {
                 font-weight: 600;
+                font-size: 1em;
             }
             .color-input {
                 display: flex;
@@ -78,6 +79,7 @@
             margin-left: 30px;
         }
         button {
+            cursor: pointer;
             transition: 0.3s;
             padding: 1em 2em;
             border-style: solid;
@@ -89,4 +91,35 @@
         }
     }
   }
+}
+
+@media (max-width: 550px) {
+    .input-field {
+        font-size: 12px;
+    }
+    .color-input-button {
+        height: 15px !important;
+        width: 45px !important;
+        border-radius: 1px !important;
+        &::-webkit-color-swatch {
+            border-radius: 1px !important;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .input-field {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .save-cancel {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: unset !important;
+        * {
+            margin-left: unset !important;
+        }
+    }
 }

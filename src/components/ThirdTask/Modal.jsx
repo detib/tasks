@@ -9,7 +9,7 @@ const inputs = [
   },
   {
     id: 'backgroundColor',
-    input: 'Background-color',
+    input: 'Background Color',
   },
   {
     id: 'buttonColor',
@@ -71,11 +71,11 @@ const Modal = () => {
   };
 
   const inital = () => {
-    setColor1('#444444');
-    setColor2('#FFFFFF');
-    setColor3('#2072EF');
-    setColor4('#2072EF');
-    setColor5('#0053D1');
+    setColor1((document.getElementById('fontColor').value = '#444444'));
+    setColor2((document.getElementById('backgroundColor').value = '#FFFFFF'));
+    setColor3((document.getElementById('buttonColor').value = '#2072EF'));
+    setColor4((document.getElementById('buttonBorderColor').value = '#2072EF'));
+    setColor5((document.getElementById('buttonMouseoverColor').value = '#0053D1'));
     setModal();
   };
 
@@ -102,7 +102,9 @@ const Modal = () => {
           {inputs.map((props, i) => {
             return (
               <div key={props.id} className='input-field'>
-                <p style={{ color: Colors[0] }}>{props.input}</p>
+                <p className='input-name' style={{ color: Colors[0] }}>
+                  {props.input}
+                </p>
                 <div className='color-input'>
                   <p style={{ color: Colors[0] }} className='color-output'>
                     {Colors[i]}
