@@ -1,5 +1,7 @@
 .about-us-container {
     padding-bottom: 250px;
+    width: 90%;
+    margin: 0 auto;
   .about-us {
     width: 75%;
     margin: 0 auto;
@@ -12,7 +14,7 @@
       gap: 20px;
       align-items: center;
       .icon-container {
-        --size: 100px;
+        --size: 70px;
         width: var(--size);
         height: var(--size);
         border: 1px solid #2469ff;
@@ -29,7 +31,7 @@
         flex: 1;
         h6 {
           color: #182e5c;
-          font-size: 2em;
+          font-size: 1.7em;
           font-weight: normal;
         }
         p {
@@ -40,7 +42,7 @@
       }
       .arrow-down {
         color: #182e5c;
-        font-size: 4em;
+        font-size: 3em;
         transition: 0.3s;
       }
     }

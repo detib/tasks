@@ -1,0 +1,92 @@
+.modal-container {
+    width: 100%;
+    z-index: 1;
+    .show-popup-button {
+        padding: 1em 2em;
+        background: #0f0;
+        border: none;
+        outline: none;
+        margin: 50px 0 0 50px;
+    }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: clamp(1%, 850px, 80%);
+    height: fit-content;
+    padding: 2em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h6 {
+            font-size: 1.1em;
+        }
+        p {
+            cursor: pointer;
+            font-size: 1em;
+        }
+    }
+    .modal-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .input-field {
+            padding: 0.5em 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            p {
+                font-weight: 600;
+            }
+            .color-input {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .color-output {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                }
+                .color-input-button {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 75px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    &::-webkit-color-swatch-wrapper {
+                        padding: 0;
+                    }
+                    &::-webkit-color-swatch {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .save-cancel {
+        align-self: flex-end;
+        &> * + * {
+            margin-left: 30px;
+        }
+        button {
+            transition: 0.3s;
+            padding: 1em 2em;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #ccc;
+            background-color: #fff;
+            border-radius: 7px;
+            font-weight: 600;
+        }
+    }
+  }
+}

@@ -1,13 +1,10 @@
 import React from 'react';
-
-import FirstPart from '../components/ThirdTask/FirstPart';
-import SecondPart from '../components/ThirdTask/SecondPart';
+import Modal from '../components/ThirdTask/Modal';
 
 const ThirdTask = () => {
   return (
     <div className='third-task'>
-      <FirstPart />
-      <SecondPart />
+      <Modal />
     </div>
   );
 };

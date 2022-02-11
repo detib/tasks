@@ -2,7 +2,9 @@
   width: 85%;
   margin: 5% auto;
   padding: 3em;
-  background: radial-gradient(#f7f7f7, transparent 90%);
+  background: radial-gradient(#f7f7f7, rgba(0,0,0,0) 90%);
+  background: -webkit-radial-gradient(#f7f7f7, rgba(0,0,0,0) 90%);
+  background: -moz-radial-gradient(#f7f7f7, rgba(0,0,0,0) 90%);
   .react-tabs {
     &__tab-list {
       border: none;
